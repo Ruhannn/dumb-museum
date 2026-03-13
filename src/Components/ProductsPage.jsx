@@ -1,5 +1,5 @@
 import { Eye, Star } from "lucide-react";
-import { Confirm, Notify } from "notiflix";
+import { Confirm } from "notiflix";
 import { Link, useLoaderData } from "react-router";
 import {
   addUnwantedIdea,

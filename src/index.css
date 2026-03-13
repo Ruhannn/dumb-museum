@@ -14,3 +14,17 @@
 body {
   font-family: var(--font-ubuntu);
 }
+
+.notiflix-confirm-content {
+  border-radius: 8px !important;
+  font-family: var(--font-ubuntu) !important;
+  background-color: var(--color-base-100) !important;
+
+  .notiflix-confirm-head > *{
+    color: var(--color-primary) !important;
+  }
+
+  .nx-confirm-button-ok {
+    background-color: var(--color-primary) !important;
+  }
+}
