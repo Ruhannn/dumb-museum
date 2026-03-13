@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import Home from "./Home.jsx";
 import Layout from "./Layout/Layout";
 import axios from "axios";
+import ProductsPage from "./Components/ProductsPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,17 +15,24 @@ const router = createBrowserRouter([
       {
         index: true,
         loader: async () => {
-          const res = await axios.get("./data.json");
+          const res = await axios.get("/data.json");
           return res.data;
         },
         element: <Home />,
       },
       {
         path: "idea/:id",
-        element: <h1>dasjhdashdk</h1>,
+        loader: async ({ params }) => {
+          const res = await axios.get("/data.json");
+          const product = res.data.find(
+            (product) => product.id === Number(params.id),
+          );
+          return product;
+        },
+        element: <ProductsPage />,
       },
       {
-        path: "my-vote",
+        path: "dashboard",
         element: <>dasdasdasd</>,
       },
     ],

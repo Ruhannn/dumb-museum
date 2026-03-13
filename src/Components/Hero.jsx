@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="carousel w-full rounded-box mt-10">
+    <section className="carousel w-full rounded-box">
       <div className="carousel-item w-full relative">
         <img
           src="https://ucarecdn.com/521746bf-be02-4f5b-88ce-eb17479ae4a5/image.png"

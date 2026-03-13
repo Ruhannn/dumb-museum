@@ -4,8 +4,8 @@ import { Link } from "react-router";
 const Links = (
   <>
     <Link to={"/"}>Home</Link>
-    <Link to={"/"}>User Collection</Link>
-    <Link to={"/"}>Submit Invention</Link>
+    <Link to={"/"}>Collection</Link>
+    <Link to={"/"}>Submit</Link>
   </>
 );
 
@@ -16,7 +16,7 @@ export default function Navbar() {
         Dumb <span className="italic text-primary ml-1"> Museum</span>
       </h1>
 
-      <ul className="text-lg navbar-center space-x-2.5 cursor-pointer [&_li]:hover:underline hidden lg:flex">
+      <ul className="text-lg navbar-center space-x-2.5 cursor-pointer [&_li]:hover:underline hidden lg:flex uppercase font-bold">
         {Links}
       </ul>
 
@@ -36,10 +36,10 @@ export default function Navbar() {
             className="menu dropdown-content bg-base-200 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a className="justify-between">
-                My Votes
+              <Link to={"/dashboard"} className="justify-between">
+                Dashboard
                 <span className="badge">New</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

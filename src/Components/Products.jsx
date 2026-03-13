@@ -1,4 +1,18 @@
+import { Eye } from "lucide-react";
+import { useState } from "react";
+import { Link } from "react-router";
+
 export default function Products({ products }) {
+  const [sortBy, setSortBy] = useState("Popular");
+
+  const sortedProducts = [...products].sort((a, b) => {
+    if (sortBy === "A-Z") return a.name.localeCompare(b.name);
+    if (sortBy === "Most Recent")
+      return new Date(b.createdAt) - new Date(a.createdAt);
+    if (sortBy === "Popular") return b.views - a.views;
+    return 0;
+  });
+
   return (
     <section>
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -18,39 +32,47 @@ export default function Products({ products }) {
           </span>
 
           <select
-            defaultValue="Popular"
-            className="select select-sm md:select-md"
+            value={sortBy}
+            onChange={(e) => setSortBy(e.target.value)}
+            className="select select-sm md:select-md w-37.5"
           >
             <option>Popular</option>
-            <option>Created</option>
+            <option>Most Recent</option>
             <option>A-Z</option>
           </select>
         </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-5">
-        {products.map((product) => (
-          <div key={product.id} class="card bg-base-200 shadow-sm">
-            <figure>
+        {sortedProducts.map((product) => (
+          <div key={product.id} className="card bg-base-200 shadow-sm">
+            <figure className="h-80">
               <img
-              className="hover:scale-110 hover:-rotate-2 transition-all ease-in"
-                src={
-                  "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                }
+                src={product.image}
                 alt={product.name}
+                className="w-full h-full object-cover object-top"
               />
             </figure>
-            <div class="card-body ">
-              <h2 class="card-title justify-between font-bold text-xl font-newsreader">
-                {product.name}
-                <span>{product.views}</span>
-              </h2>
+            <div className="card-body">
+              <div className="card-title justify-between font-newsreader">
+                <h1 className="font-bold text-xl">{product.name}</h1>
+                <div className="text-base-content/80 flex space-x-1">
+                  <Eye />
+                  <span>
+                    {new Intl.NumberFormat("en", {
+                      notation: "compact",
+                    }).format(product.views)}
+                  </span>
+                </div>
+              </div>
               <p className="text-md text-secondary/80 italic">
                 "{product.short_details}"
               </p>
-              <div class="card-actions">
-                <button class="btn btn-outline btn-accent btn-block">
-                  Details
-                </button>
+              <div className="card-actions">
+                <Link to={`idea/${product.id}`}>
+                  <button className="btn btn-outline btn-accent btn-block">
+                    Details
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
