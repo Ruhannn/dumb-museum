@@ -1,4 +1,5 @@
-import { Menu } from "lucide-react";
+import { Menu, Moon, Sun } from "lucide-react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router";
 
 const Links = (
@@ -10,6 +11,21 @@ const Links = (
 );
 
 export default function Navbar() {
+  const [theme, setTheme] = useState("caramellatte");
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme") || "caramellatte";
+    setTheme(savedTheme);
+    document.documentElement.setAttribute("data-theme", savedTheme);
+  }, []);
+
+  const toggleTheme = () => {
+    const nextTheme = theme === "dracula" ? "caramellatte" : "dracula";
+    setTheme(nextTheme);
+    localStorage.setItem("theme", nextTheme);
+    document.documentElement.setAttribute("data-theme", nextTheme);
+  };
+
   return (
     <div className="navbar shadow-sm px-6">
       <h1 className="md:text-2xl text-xl font-bold navbar-start font-newsreader">
@@ -21,6 +37,15 @@ export default function Navbar() {
       </ul>
 
       <div className="navbar-end">
+        <button
+          onClick={toggleTheme}
+          className="btn btn-ghost btn-circle mr-2"
+          aria-label="Toggle theme"
+          title="Toggle theme"
+        >
+          {theme === "dracula" ? <Sun size={20} /> : <Moon size={20} />}
+        </button>
+
         <div className="dropdown dropdown-end">
           <div tabIndex={0} className="avatar cursor-pointer">
             <div className="w-10 rounded-md">

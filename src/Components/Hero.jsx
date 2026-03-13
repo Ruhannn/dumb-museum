@@ -10,11 +10,11 @@ export default function Hero() {
 
         <div className="absolute inset-0 bg-black/50 flex items-center">
           <div className="px-6 md:px-12 lg:px-20 max-w-xl font-newsreader">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-base-100 italic mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-base-100 italic mb-4 in-data-[theme=dracula]:text-primary">
               Welcome to the Museum
             </h1>
 
-            <p className="text-sm sm:text-lg md:text-xl text-primary-content italic mb-6">
+            <p className="text-sm sm:text-lg md:text-xl text-primary-content in-data-[theme=dracula]:text-secondary italic mb-6">
               Discover the weirdest and most useless inventions ever created.
             </p>
 

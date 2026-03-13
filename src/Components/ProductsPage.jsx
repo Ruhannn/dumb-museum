@@ -7,48 +7,36 @@ import {
   isIdeaUnwanted,
   isIdeaWanted,
 } from "./../utils/localstorage";
+import toast from "react-hot-toast";
 
 export default function ProductsPage() {
   const p = useLoaderData();
 
   const handleWantThis = (id) => {
     if (isIdeaWanted(id)) {
-      Notify.info("This product is already in your wanted list.", {
-        timeout: 5000,
-        showOnlyTheLastOne: true,
-      });
+      toast.error("This product is already in your wanted list.");
       return;
     }
 
     if (isIdeaUnwanted(id)) {
-      Notify.warning("This product is in your unwanted list.", {
-        timeout: 5000,
-        showOnlyTheLastOne: true,
-      });
+      toast.error("This product is in your unwanted list.");
       return;
     }
 
     addWantedIdea(id);
-    Notify.success("Thank you for your interest!", {
-      timeout: 5000,
-      showOnlyTheLastOne: true,
-    });
+    toast.success("Thank you for your interest!");
   };
 
   const handleDontWantThis = (id) => {
     if (isIdeaUnwanted(id)) {
-      Notify.info("This product is already in your unwanted list.", {
-        timeout: 5000,
-        showOnlyTheLastOne: true,
+      toast.error("This product is already in your unwanted list.", {
+        duration: 5000,
       });
       return;
     }
 
     if (isIdeaWanted(id)) {
-      Notify.warning("This product is in your wanted list.", {
-        timeout: 5000,
-        showOnlyTheLastOne: true,
-      });
+      toast.error("This product is in your wanted list.");
       return;
     }
 
@@ -59,11 +47,8 @@ export default function ProductsPage() {
       "No",
       () => {
         addUnwantedIdea(id);
-        Notify.success("This product has been added to your unwanted list.", {
-          timeout: 5000,
-          showOnlyTheLastOne: true,
-        });
-      }
+        toast.success("This product has been added to your unwanted list.");
+      },
     );
   };
 

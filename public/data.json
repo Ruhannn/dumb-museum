@@ -19,7 +19,7 @@
       "rating": 5.0,
       "views": 500000,
       "created_date": "1952",
-      "image": "https://makezine.com/wp-content/uploads/the-useless-machine.jpg",
+      "image": "https://ucarecdn.com/e63f50f5-23f7-4a15-9384-c0fdbc062831/image.png",
       "key_feature": "Self-deactivating arm mechanism (pure pointless perfection)",
       "quote": "\"It does absolutely nothing... and does it perfectly.\" — Every owner ever"
     },
@@ -31,7 +31,7 @@
       "rating": 4.5,
       "views": 100000,
       "created_date": "2017",
-      "image": "https://appleinsider.com/wp-content/uploads/2022/10/bananaphone.jpg",
+      "image": "https://ucarecdn.com/69b5a099-00e5-47cf-aff9-4b46af561bf7/image.png",
       "key_feature": "Full Bluetooth + speaker in banana shape",
       "quote": "\"Ring ring ring ring ring... banana phone!\" — The classic song that inspired it"
     },
@@ -55,7 +55,7 @@
       "rating": 4.7,
       "views": 30000,
       "created_date": "2012",
-      "image": "https://thisiswhyimbroke.com/wp-content/uploads/motorized-ice-cream-cone.jpg",
+      "image": "https://ucarecdn.com/c048f916-14d3-464b-be71-cd677387b7c4/image.png",
       "key_feature": "Battery-powered slow rotation for even melting",
       "quote": "\"No more manual turning — let the cone do the work!\""
     },
@@ -67,7 +67,7 @@
       "rating": 5.0,
       "views": 25000000,
       "created_date": "1977",
-      "image": "https://chia.com/wp-content/uploads/2023/09/chia-pet-classic.jpg",
+      "image": "https://ucarecdn.com/1dd00c9a-508e-4e01-a000-26939076bf65/image.png",
       "key_feature": "Grows real chia sprouts in 7-10 days (just add water)",
       "quote": "\"Ch-ch-ch-Chia!\" — The iconic TV jingle"
     },
@@ -79,7 +79,7 @@
       "rating": 4.8,
       "views": 5000000,
       "created_date": "2000",
-      "image": "https://gemmy.com/wp-content/uploads/billy-bass.jpg",
+      "image": "https://ucarecdn.com/9aa7299e-9223-4c70-902b-cd335d936cc2/image.png",
       "key_feature": "Motion-activated singing and head-bobbing mechanism",
       "quote": "\"Take me to the river...\" — Billy himself"
     },
@@ -91,7 +91,7 @@
       "rating": 4.3,
       "views": 2000000,
       "created_date": "2010",
-      "image": "https://shakeweight.com/images/product.jpg",
+      "image": "https://ucarecdn.com/94fa4f19-53b7-4adb-86bb-786fc535104a/image.png",
       "key_feature": "Dynamic inertia technology that shakes on its own",
       "quote": "\"Shake it like you mean it!\" — Infomercial voiceover"
     },
@@ -103,7 +103,7 @@
       "rating": 4.7,
       "views": 10000000,
       "created_date": "1985",
-      "image": "https://theclapper.com/wp-content/uploads/clapper-box.jpg",
+      "image": "https://ucarecdn.com/88b764c7-5937-4eab-9ff4-b8958b2c8a12/image.png",
       "key_feature": "Sound-activated switch for lamps and appliances",
       "quote": "\"Clap on! Clap off! The Clapper!\""
     },
@@ -115,67 +115,55 @@
       "rating": 4.6,
       "views": 30000000,
       "created_date": "2008",
-      "image": "https://snuggie.com/images/snuggie-product.jpg",
+      "image": "https://ucarecdn.com/68ca59ae-35b0-4f6e-975c-5f83433557ab/image.png",
       "key_feature": "Fleece with built-in sleeves for hands-free warmth",
       "quote": "\"The blanket that has sleeves!\""
     },
     {
       "id": 11,
-      "name": "Flowbee",
-      "short_details": "Vacuum-powered hair trimmer that cuts while sucking up hair.",
-      "long_details": "Patented in 1986 and sold millions through TV ads. Attach to your vacuum, put on the attachments, and give yourself a haircut. Still has a cult following today — the original DIY hair gadget.",
-      "rating": 4.4,
-      "views": 1000000,
-      "created_date": "1986",
-      "image": "https://flowbee.com/wp-content/uploads/flowbee-vacuum-haircutter.jpg",
-      "key_feature": "Suction-powered cutting blades for even trims",
-      "quote": "\"The Flowbee will change your life!\" — Original TV ad"
-    },
-    {
-      "id": 12,
       "name": "Banana Slicer",
       "short_details": "Plastic tool that slices an entire banana in one perfect motion.",
       "long_details": "Became a viral Amazon hit around 2012 with thousands of hilarious reviews. One quick press and you get uniform banana slices. Still one of the most pointless kitchen gadgets ever sold.",
       "rating": 4.9,
       "views": 500000,
       "created_date": "2012",
-      "image": "https://m.media-amazon.com/images/I/71banana-slicer.jpg",
+      "image": "https://ucarecdn.com/c08c5bff-9d32-479e-9f00-44e2692fefe7/image.png",
       "key_feature": "One-piece plastic slicer for perfect 1-inch slices",
       "quote": "\"Finally, evenly sliced bananas in seconds!\" — Amazon reviewer"
     },
     {
-      "id": 13,
+      "id": 12,
       "name": "USB Pet Rock",
       "short_details": "A real pet rock that plugs into your USB port.",
       "long_details": "ThinkGeek launched this in 2004 as the ultimate joke gadget. It's just a rock with a USB cable — no function, no storage, just vibes. Sold thousands to nerds who loved the absurdity.",
       "rating": 5.0,
       "views": 50000,
       "created_date": "2004",
-      "image": "https://thinkgeek.com/images/usb-pet-rock.jpg",
+      "image": "https://ucarecdn.com/b1dfdb4a-99af-427f-bbc6-7fc67d18d300/Boulder%20perfected%20_Sit!_%20and%20_Stay!_%20faster%20than%20any%20other%20pet%20in%20history_%20She%20is%20a%20rock%20star%20of%20a%20student!.jfif",
       "key_feature": "USB plug for 'charging' your rock (it does nothing)",
       "quote": "\"The pet rock for the digital age.\""
     },
     {
-      "id": 14,
+      "id": 13,
       "name": "NoPhone",
       "short_details": "A fake phone you hold so you look busy.",
       "long_details": "Kickstarter hit in 2014 (raised thousands). It's literally a black plastic rectangle with no screen, no battery, nothing. Sold as an anti-smartphone device for people addicted to their phones. Still available.",
       "rating": 4.2,
       "views": 100000,
       "created_date": "2014",
-      "image": "https://thenophone.com/images/nophone-zero.jpg",
+      "image": "https://ucarecdn.com/28a53968-f47d-4c7d-a8a0-577675160ad5/image.png",
       "key_feature": "Exact iPhone size and weight with zero functionality",
       "quote": "\"The phone for people who hate phones.\""
     },
     {
-      "id": 15,
+      "id": 14,
       "name": "DVD Rewinder",
       "short_details": "A machine that 'rewinds' your DVDs.",
       "long_details": "Popular novelty gadget in the early 2000s. DVDs don't need rewinding (unlike VHS), but this spinning box did it anyway for laughs. Sold tens of thousands as the ultimate pointless electronic device.",
       "rating": 4.5,
       "views": 25000,
       "created_date": "2002",
-      "image": "https://thisiswhyimbroke.com/wp-content/uploads/dvd-rewinder.jpg",
+      "image": "https://ucarecdn.com/4f33fcfe-deb8-498e-b2b3-ff5245a33118/image.png",
       "key_feature": "Spinning tray that makes fake rewinding sounds",
       "quote": "\"Because your DVDs deserve the full VHS experience.\""
     }

@@ -68,10 +68,11 @@ export default function Products({ products }) {
                 "{product.short_details}"
               </p>
               <div className="card-actions">
-                <Link to={`idea/${product.id}`}>
-                  <button className="btn btn-outline btn-accent btn-block">
-                    Details
-                  </button>
+                <Link
+                  to={`idea/${product.id}`}
+                  className="btn btn-outline btn-accent btn-block"
+                >
+                  Details
                 </Link>
               </div>
             </div>

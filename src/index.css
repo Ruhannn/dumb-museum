@@ -8,8 +8,7 @@
 }
 
  @plugin "daisyui" {
-   /* themes: light --default, dark --prefersdark; */
-   themes:caramellatte --default;
+   themes: caramellatte --default, dracula;
  }
 
 body {
