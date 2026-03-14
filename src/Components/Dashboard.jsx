@@ -10,7 +10,6 @@ import {
   CartesianGrid,
   PieChart,
   Pie,
-  Cell,
   Legend,
 } from "recharts";
 import { getWantedIdeasID, getUnwantedIdeasID } from "../utils/localstorage";
@@ -28,17 +27,17 @@ export default function Dashboard() {
     .sort((a, b) => b.views - a.views)
     .slice(0, 6)
     .map((p) => ({
-      name: p.name.length > 11 ? p.name.slice(0, 11) + "…" : p.name,
+      name: p.name,
       views: p.views,
     }));
 
   const pieData = [
-    { name: "Wanted", value: wantedCount, color: "var(--color-success)" },
-    { name: "Unwanted", value: unwantedCount, color: "var(--color-error)" },
+    { name: "Wanted", value: wantedCount, fill: "var(--color-success)" },
+    { name: "Unwanted", value: unwantedCount, fill: "var(--color-error)" },
     {
       name: "Neutral",
       value: products.length - wantedCount - unwantedCount,
-      color: "var(--color-primary)",
+      fill: "var(--color-primary)",
     },
   ].filter((d) => d.value > 0);
 
@@ -76,7 +75,7 @@ export default function Dashboard() {
         <div className="bg-base-200 rounded-box p-5">
           <h2 className="font-bold text-lg mb-4">Top Items by Views</h2>
 
-          <ResponsiveContainer width="100%" height={280}>
+          <ResponsiveContainer height={280}>
             <BarChart data={barData}>
               <CartesianGrid strokeDasharray="3 3" opacity={0.4} />
               <XAxis dataKey="name" tick={{ fontSize: 11 }} />
@@ -111,11 +110,7 @@ export default function Dashboard() {
                 cy="50%"
                 outerRadius={90}
                 dataKey="value"
-              >
-                {pieData.map((entry, i) => (
-                  <Cell key={i} fill={entry.color} />
-                ))}
-              </Pie>
+              ></Pie>
               <Tooltip />
               <Legend />
             </PieChart>

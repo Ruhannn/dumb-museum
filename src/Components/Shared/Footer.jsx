@@ -1,5 +1,3 @@
-import { Facebook, Instagram, Youtube } from "lucide-react";
-
 export default function Footer() {
   return (
     <footer className="footer footer-horizontal footer-center bg-secondary text-secondary-content p-10">
